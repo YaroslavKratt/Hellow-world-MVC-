@@ -37,8 +37,8 @@ public class Controller {
         else {
             System.out.println(View.HELLOW_MESSAGE);
         }
-        while (scanner.hasNext() != false){
-            String next=scanner.next();
+        while (!scanner.hasNext()){
+            String next=scanner.next().trim();
 
             if((next.equals( Controller.HELLOW)) || next.equals(Controller.WORLD)){
                 output=next;
